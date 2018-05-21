@@ -15,7 +15,7 @@ To install from npm:
 $ npm install --save @fav/math.gcd
 ```
 
-***NOTE:*** *npm < 2.7.0 does not support scoped package, but even old version Node.js supports it. So when you use such older npm, you should download this package from [github.com][repo-url], and move it in `node_modules/@fav/text.gcd/` directory manually.*
+***NOTE:*** *npm < 2.7.0 does not support scoped package, but old version Node.js supports it. So when you use such older npm, you should download this package from [github.com][repo-url], and move it in `node_modules/@fav/math.gcd/` directory manually.*
 
 
 ## Usage
@@ -28,7 +28,8 @@ gcd(12, 34) // => 2
 gcd(12, -34) // => 2
 gcd(1, 12) // => 1
 
-gcd(0, 12) // => 12
+gcd(0, 12) // => 1
+gcd(0, 0) // => 1
 ```
 
 For Web browsers:
@@ -50,7 +51,7 @@ Calculates the greatest common divisor of two integers.
 
 This function assumes that both `x` and `y` are integers within `Number.MIN_SAFE_INTEGER` 〜 `Number.MAX_SAFE_INTEGER`.
 
-If either `x` or `y` is a `0`, this function returns 1.
+If `x` or `y` is 0, this function returns 1.
 
 ***NOTE:*** *This function doesn't check data types of the arguments, and assumes that they are given as per the specific data types.*
 
@@ -110,7 +111,7 @@ This program is free software under [MIT][mit-url] License.
 See the file LICENSE in this distribution for more details.
 
 [repo-url]: https://github.com/sttk/fav-math.gcd/
-[npm-img]: https://img.shields.io/badge/npm-v1.0.2-blue.svg
+[npm-img]: https://img.shields.io/badge/npm-v0.0.0-blue.svg
 [npm-url]: https://www.npmjs.com/package/@fav/math.gcd
 [mit-img]: https://img.shields.io/badge/license-MIT-green.svg
 [mit-url]: https://opensource.org/licenses/MIT
