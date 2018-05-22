@@ -1,6 +1,6 @@
 {
   "name": "@fav/math.gcd",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Calculates the greatest common divisor of two integers.",
   "main": "index.js",
   "files": [
